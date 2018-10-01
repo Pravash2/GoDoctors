@@ -7,6 +7,11 @@ router.get("/",function(req,res){
     
 });
 
+router.get("/doctors",function(req,res){
+    res.render("doctors.ejs");
+    
+});
+
 router.get("/hospital",function(req,res){
     res.render("hospital.ejs");
     

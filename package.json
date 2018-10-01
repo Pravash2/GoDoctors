@@ -11,8 +11,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pravash2/Go-Doctors.git"
+  },
+  "author": "pravash",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pravash2/Go-Doctors/issues"
+  },
+  "homepage": "https://github.com/Pravash2/Go-Doctors#readme",
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3"

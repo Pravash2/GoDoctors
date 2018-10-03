@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GoDoctors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body{
+            background-color:#1BBD36;
+            color:white;
+            padding:3%;
+        }
+    
+    </style>
+  </head>
+  <body>
+    <a href="/diagonise"><h5>back</h5></a>
+    <div id="bod">
+    <ol>
+    <%data.forEach((e)=>{%>
+    <li><%= e['Issue']['Name'] %></li>
+      <ul>
+        <li><%= e['Issue']['IcdName'] %></li>
+        <li>consult:
+            <ol>
+              <% for(var i=0;i<e['Specialisation'].length;i++) {%>
+              <b><li><%= e['Specialisation'][i]['Name'] %></li></b>
+              <%}%>
+            </ol>
+        </li>
+      </ul>
+    <% }) %>
+    </ol>
+    </div>
+  </body>
+</html>

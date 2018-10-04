@@ -15,6 +15,13 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/diagonise', diagoniseRouter);
 
+app.get("*",(req,res)=>{
+    res.render('index');
+});
+app.post("*",(req,res)=>{
+    res.render('indexx');
+});
+
 
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("The server has started!");

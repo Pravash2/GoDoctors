@@ -11,19 +11,23 @@ router.get("/doctors",function(req,res){
     res.render("doctors.ejs");
     
 });
-
 router.get("/hospital",function(req,res){
     res.render("hospital.ejs");
     
 });
 
-router.get("/dispensary",function(req,res){
-    res.render("dispensary.ejs");
+router.get("/bloodbank",function(req,res){
+    res.render("bloodbank.ejs");
     
 });
 
-router.get("/patholab",function(req,res){
-    res.render("patholab.ejs");
+router.get("/donate",function(req,res){
+    res.render("donate.ejs");
+    
+});
+
+router.get("/emergency",function(req,res){
+    res.render("emergency.ejs");
     
 });
 

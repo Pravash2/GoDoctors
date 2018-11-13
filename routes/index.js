@@ -7,8 +7,8 @@ const       express = require('express');
             User                  = require("../models/user"),
             LocalStrategy         = require("passport-local"),
             passportLocalMongoose = require("passport-local-mongoose")
-
-            mongoose.connect("mongodb://pravash2:prava9861@ds259732.mlab.com:59732/godoctors");
+            key                   = require('../config/keys')
+            mongoose.connect(key.url);
          
             router.use(bodyParser.urlencoded({extended: true}));
             router.use(require("express-session")({

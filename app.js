@@ -23,6 +23,6 @@ app.post("*",(req,res)=>{
 });
 
 
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(process.env.PORT || 8080,process.env.IP,function(){
     console.log("The server has started!");
 });

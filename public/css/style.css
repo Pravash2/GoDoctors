@@ -1260,3 +1260,10 @@ a.scrollup:hover{
 .m{
   height:700px;
 }
+.form-group{
+  border:1px solid#B0B0B0;
+  border-radius: 5px;
+}
+form{
+  margin-bottom:200px;
+}
